@@ -52,6 +52,8 @@ player_pos = [WIDTH//2 - player_width//2, HEIGHT - player_height - 10]
 
 def draw_paddle(pos, width, height):
     pygame.draw.rect(screen, white, (pos[0], pos[1], width, height))
+    
+
 
 #Game Loop 
 run = True     
