@@ -1,0 +1,325 @@
+[
+    {
+        "label": "pygame",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pygame",
+        "description": "pygame",
+        "detail": "pygame",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "pygame",
+        "description": "pygame",
+        "isExtraImport": true,
+        "detail": "pygame",
+        "documentation": {}
+    },
+    {
+        "label": "draw_paddle",
+        "kind": 2,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "def draw_paddle(pos, width, height):\n    pygame.draw.rect(screen, white, (pos[0], pos[1], width, height))\ndef reset_ball():\n    return [WIDTH//2, HEIGHT//2], [5, 5 if pygame.time.get_ticks() % 2 == 0 else -5]\n#Add the ball and ball movement \nball_pos = [WIDTH // 2, HEIGHT//2]\nball_radius = 10 \nball_speed = [5, 5]\ndef draw_ball(pos):\n    pygame.draw.circle(screen, white, (int(pos[0]), int(pos[1])), ball_radius)",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "reset_ball",
+        "kind": 2,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "def reset_ball():\n    return [WIDTH//2, HEIGHT//2], [5, 5 if pygame.time.get_ticks() % 2 == 0 else -5]\n#Add the ball and ball movement \nball_pos = [WIDTH // 2, HEIGHT//2]\nball_radius = 10 \nball_speed = [5, 5]\ndef draw_ball(pos):\n    pygame.draw.circle(screen, white, (int(pos[0]), int(pos[1])), ball_radius)\n# keeper AI \nkeeper_direction = 1 ",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "draw_ball",
+        "kind": 2,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "def draw_ball(pos):\n    pygame.draw.circle(screen, white, (int(pos[0]), int(pos[1])), ball_radius)\n# keeper AI \nkeeper_direction = 1 \ndef show_game_over(winner):\n    screen.blit(background, (0,0))\n    text = font.render(f\"{winner} Wins! Press R to restart\", True , white)\n    screen.blit(text, (WIDTH//2 - text.get_width()//2, HEIGHT//2))\n    pygame.display.update()\n    waiting = True     ",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "show_game_over",
+        "kind": 2,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "def show_game_over(winner):\n    screen.blit(background, (0,0))\n    text = font.render(f\"{winner} Wins! Press R to restart\", True , white)\n    screen.blit(text, (WIDTH//2 - text.get_width()//2, HEIGHT//2))\n    pygame.display.update()\n    waiting = True     \n    while waiting: \n        for event in pygame.event.get():\n            if event.type == QUIT:\n                pygame.quit()",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "player_score",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "player_score = 0\nkeeper_score = 0 \nwining_score = 10 \ngame_over = False \nfont = pygame.font.Font(None, 36)\n#Game window \nWIDTH = 500\nHEIGHT = 600 \nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption('Soccer Pong')",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "keeper_score",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "keeper_score = 0 \nwining_score = 10 \ngame_over = False \nfont = pygame.font.Font(None, 36)\n#Game window \nWIDTH = 500\nHEIGHT = 600 \nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption('Soccer Pong')\nclock = pygame.time.Clock()",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "wining_score",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "wining_score = 10 \ngame_over = False \nfont = pygame.font.Font(None, 36)\n#Game window \nWIDTH = 500\nHEIGHT = 600 \nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption('Soccer Pong')\nclock = pygame.time.Clock()\n#colors ",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "game_over",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "game_over = False \nfont = pygame.font.Font(None, 36)\n#Game window \nWIDTH = 500\nHEIGHT = 600 \nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption('Soccer Pong')\nclock = pygame.time.Clock()\n#colors \ngrass_green = (40, 135, 58)",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "font",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "font = pygame.font.Font(None, 36)\n#Game window \nWIDTH = 500\nHEIGHT = 600 \nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption('Soccer Pong')\nclock = pygame.time.Clock()\n#colors \ngrass_green = (40, 135, 58)\nwhite = (255, 255, 255)",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "WIDTH",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "WIDTH = 500\nHEIGHT = 600 \nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption('Soccer Pong')\nclock = pygame.time.Clock()\n#colors \ngrass_green = (40, 135, 58)\nwhite = (255, 255, 255)\n#create field background \nbackground = pygame.Surface((WIDTH, HEIGHT))",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "HEIGHT",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "HEIGHT = 600 \nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption('Soccer Pong')\nclock = pygame.time.Clock()\n#colors \ngrass_green = (40, 135, 58)\nwhite = (255, 255, 255)\n#create field background \nbackground = pygame.Surface((WIDTH, HEIGHT))\nbackground.fill(grass_green)",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "screen",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "screen = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption('Soccer Pong')\nclock = pygame.time.Clock()\n#colors \ngrass_green = (40, 135, 58)\nwhite = (255, 255, 255)\n#create field background \nbackground = pygame.Surface((WIDTH, HEIGHT))\nbackground.fill(grass_green)\n#Field Markings ",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "clock",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "clock = pygame.time.Clock()\n#colors \ngrass_green = (40, 135, 58)\nwhite = (255, 255, 255)\n#create field background \nbackground = pygame.Surface((WIDTH, HEIGHT))\nbackground.fill(grass_green)\n#Field Markings \ncentre_circle_radius = 70 \npygame.draw.circle(background, white, (WIDTH//2, HEIGHT//2), centre_circle_radius, 2)",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "grass_green",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "grass_green = (40, 135, 58)\nwhite = (255, 255, 255)\n#create field background \nbackground = pygame.Surface((WIDTH, HEIGHT))\nbackground.fill(grass_green)\n#Field Markings \ncentre_circle_radius = 70 \npygame.draw.circle(background, white, (WIDTH//2, HEIGHT//2), centre_circle_radius, 2)\npygame.draw.circle(background, white, (WIDTH//2, HEIGHT//2), 5)\npygame.draw.line(background, white, (0, HEIGHT//2), (WIDTH, HEIGHT//2), 2)",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "white",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "white = (255, 255, 255)\n#create field background \nbackground = pygame.Surface((WIDTH, HEIGHT))\nbackground.fill(grass_green)\n#Field Markings \ncentre_circle_radius = 70 \npygame.draw.circle(background, white, (WIDTH//2, HEIGHT//2), centre_circle_radius, 2)\npygame.draw.circle(background, white, (WIDTH//2, HEIGHT//2), 5)\npygame.draw.line(background, white, (0, HEIGHT//2), (WIDTH, HEIGHT//2), 2)\npygame.draw.rect(background, white, (WIDTH//2 - 110, 0, 220,60), 2)",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "background",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "background = pygame.Surface((WIDTH, HEIGHT))\nbackground.fill(grass_green)\n#Field Markings \ncentre_circle_radius = 70 \npygame.draw.circle(background, white, (WIDTH//2, HEIGHT//2), centre_circle_radius, 2)\npygame.draw.circle(background, white, (WIDTH//2, HEIGHT//2), 5)\npygame.draw.line(background, white, (0, HEIGHT//2), (WIDTH, HEIGHT//2), 2)\npygame.draw.rect(background, white, (WIDTH//2 - 110, 0, 220,60), 2)\n#Goal net \nGOAL_WIDTH = 250 ",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "centre_circle_radius",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "centre_circle_radius = 70 \npygame.draw.circle(background, white, (WIDTH//2, HEIGHT//2), centre_circle_radius, 2)\npygame.draw.circle(background, white, (WIDTH//2, HEIGHT//2), 5)\npygame.draw.line(background, white, (0, HEIGHT//2), (WIDTH, HEIGHT//2), 2)\npygame.draw.rect(background, white, (WIDTH//2 - 110, 0, 220,60), 2)\n#Goal net \nGOAL_WIDTH = 250 \nGOAL_HEIGHT = 40 \nnet_color = (200, 200, 200, 150)\nnet_surface = pygame.Surface((GOAL_WIDTH, GOAL_HEIGHT), pygame.SRCALPHA)",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "GOAL_WIDTH",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "GOAL_WIDTH = 250 \nGOAL_HEIGHT = 40 \nnet_color = (200, 200, 200, 150)\nnet_surface = pygame.Surface((GOAL_WIDTH, GOAL_HEIGHT), pygame.SRCALPHA)\nfor i in range(0, GOAL_WIDTH, 15):\n    pygame.draw.line(net_surface, net_color, (i,0), (i, GOAL_HEIGHT), 1)\nfor i in range(0, GOAL_HEIGHT, 15):\n    pygame.draw.line(net_surface, net_color, (0,i), (GOAL_HEIGHT, i), 1)\ngoal_rect = net_surface.get_rect(center=(WIDTH//2, 20))\n#paddle x'tics ",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "GOAL_HEIGHT",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "GOAL_HEIGHT = 40 \nnet_color = (200, 200, 200, 150)\nnet_surface = pygame.Surface((GOAL_WIDTH, GOAL_HEIGHT), pygame.SRCALPHA)\nfor i in range(0, GOAL_WIDTH, 15):\n    pygame.draw.line(net_surface, net_color, (i,0), (i, GOAL_HEIGHT), 1)\nfor i in range(0, GOAL_HEIGHT, 15):\n    pygame.draw.line(net_surface, net_color, (0,i), (GOAL_HEIGHT, i), 1)\ngoal_rect = net_surface.get_rect(center=(WIDTH//2, 20))\n#paddle x'tics \nkeeper_width = 100 ",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "net_color",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "net_color = (200, 200, 200, 150)\nnet_surface = pygame.Surface((GOAL_WIDTH, GOAL_HEIGHT), pygame.SRCALPHA)\nfor i in range(0, GOAL_WIDTH, 15):\n    pygame.draw.line(net_surface, net_color, (i,0), (i, GOAL_HEIGHT), 1)\nfor i in range(0, GOAL_HEIGHT, 15):\n    pygame.draw.line(net_surface, net_color, (0,i), (GOAL_HEIGHT, i), 1)\ngoal_rect = net_surface.get_rect(center=(WIDTH//2, 20))\n#paddle x'tics \nkeeper_width = 100 \nkeeper_height = 15 ",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "net_surface",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "net_surface = pygame.Surface((GOAL_WIDTH, GOAL_HEIGHT), pygame.SRCALPHA)\nfor i in range(0, GOAL_WIDTH, 15):\n    pygame.draw.line(net_surface, net_color, (i,0), (i, GOAL_HEIGHT), 1)\nfor i in range(0, GOAL_HEIGHT, 15):\n    pygame.draw.line(net_surface, net_color, (0,i), (GOAL_HEIGHT, i), 1)\ngoal_rect = net_surface.get_rect(center=(WIDTH//2, 20))\n#paddle x'tics \nkeeper_width = 100 \nkeeper_height = 15 \nplayer_width = 80 ",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "goal_rect",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "goal_rect = net_surface.get_rect(center=(WIDTH//2, 20))\n#paddle x'tics \nkeeper_width = 100 \nkeeper_height = 15 \nplayer_width = 80 \nplayer_height = 15 \npaddle_speed = 8 \n#Place the paddles  \nkeeper_pos = [WIDTH//2 -keeper_width // 2, 60] \nplayer_pos = [WIDTH//2 - player_width//2, HEIGHT - player_height - 10]",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "keeper_width",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "keeper_width = 100 \nkeeper_height = 15 \nplayer_width = 80 \nplayer_height = 15 \npaddle_speed = 8 \n#Place the paddles  \nkeeper_pos = [WIDTH//2 -keeper_width // 2, 60] \nplayer_pos = [WIDTH//2 - player_width//2, HEIGHT - player_height - 10]\ndef draw_paddle(pos, width, height):\n    pygame.draw.rect(screen, white, (pos[0], pos[1], width, height))",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "keeper_height",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "keeper_height = 15 \nplayer_width = 80 \nplayer_height = 15 \npaddle_speed = 8 \n#Place the paddles  \nkeeper_pos = [WIDTH//2 -keeper_width // 2, 60] \nplayer_pos = [WIDTH//2 - player_width//2, HEIGHT - player_height - 10]\ndef draw_paddle(pos, width, height):\n    pygame.draw.rect(screen, white, (pos[0], pos[1], width, height))\ndef reset_ball():",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "player_width",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "player_width = 80 \nplayer_height = 15 \npaddle_speed = 8 \n#Place the paddles  \nkeeper_pos = [WIDTH//2 -keeper_width // 2, 60] \nplayer_pos = [WIDTH//2 - player_width//2, HEIGHT - player_height - 10]\ndef draw_paddle(pos, width, height):\n    pygame.draw.rect(screen, white, (pos[0], pos[1], width, height))\ndef reset_ball():\n    return [WIDTH//2, HEIGHT//2], [5, 5 if pygame.time.get_ticks() % 2 == 0 else -5]",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "player_height",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "player_height = 15 \npaddle_speed = 8 \n#Place the paddles  \nkeeper_pos = [WIDTH//2 -keeper_width // 2, 60] \nplayer_pos = [WIDTH//2 - player_width//2, HEIGHT - player_height - 10]\ndef draw_paddle(pos, width, height):\n    pygame.draw.rect(screen, white, (pos[0], pos[1], width, height))\ndef reset_ball():\n    return [WIDTH//2, HEIGHT//2], [5, 5 if pygame.time.get_ticks() % 2 == 0 else -5]\n#Add the ball and ball movement ",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "paddle_speed",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "paddle_speed = 8 \n#Place the paddles  \nkeeper_pos = [WIDTH//2 -keeper_width // 2, 60] \nplayer_pos = [WIDTH//2 - player_width//2, HEIGHT - player_height - 10]\ndef draw_paddle(pos, width, height):\n    pygame.draw.rect(screen, white, (pos[0], pos[1], width, height))\ndef reset_ball():\n    return [WIDTH//2, HEIGHT//2], [5, 5 if pygame.time.get_ticks() % 2 == 0 else -5]\n#Add the ball and ball movement \nball_pos = [WIDTH // 2, HEIGHT//2]",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "keeper_pos",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "keeper_pos = [WIDTH//2 -keeper_width // 2, 60] \nplayer_pos = [WIDTH//2 - player_width//2, HEIGHT - player_height - 10]\ndef draw_paddle(pos, width, height):\n    pygame.draw.rect(screen, white, (pos[0], pos[1], width, height))\ndef reset_ball():\n    return [WIDTH//2, HEIGHT//2], [5, 5 if pygame.time.get_ticks() % 2 == 0 else -5]\n#Add the ball and ball movement \nball_pos = [WIDTH // 2, HEIGHT//2]\nball_radius = 10 \nball_speed = [5, 5]",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "player_pos",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "player_pos = [WIDTH//2 - player_width//2, HEIGHT - player_height - 10]\ndef draw_paddle(pos, width, height):\n    pygame.draw.rect(screen, white, (pos[0], pos[1], width, height))\ndef reset_ball():\n    return [WIDTH//2, HEIGHT//2], [5, 5 if pygame.time.get_ticks() % 2 == 0 else -5]\n#Add the ball and ball movement \nball_pos = [WIDTH // 2, HEIGHT//2]\nball_radius = 10 \nball_speed = [5, 5]\ndef draw_ball(pos):",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "ball_pos",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "ball_pos = [WIDTH // 2, HEIGHT//2]\nball_radius = 10 \nball_speed = [5, 5]\ndef draw_ball(pos):\n    pygame.draw.circle(screen, white, (int(pos[0]), int(pos[1])), ball_radius)\n# keeper AI \nkeeper_direction = 1 \ndef show_game_over(winner):\n    screen.blit(background, (0,0))\n    text = font.render(f\"{winner} Wins! Press R to restart\", True , white)",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "ball_radius",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "ball_radius = 10 \nball_speed = [5, 5]\ndef draw_ball(pos):\n    pygame.draw.circle(screen, white, (int(pos[0]), int(pos[1])), ball_radius)\n# keeper AI \nkeeper_direction = 1 \ndef show_game_over(winner):\n    screen.blit(background, (0,0))\n    text = font.render(f\"{winner} Wins! Press R to restart\", True , white)\n    screen.blit(text, (WIDTH//2 - text.get_width()//2, HEIGHT//2))",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "ball_speed",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "ball_speed = [5, 5]\ndef draw_ball(pos):\n    pygame.draw.circle(screen, white, (int(pos[0]), int(pos[1])), ball_radius)\n# keeper AI \nkeeper_direction = 1 \ndef show_game_over(winner):\n    screen.blit(background, (0,0))\n    text = font.render(f\"{winner} Wins! Press R to restart\", True , white)\n    screen.blit(text, (WIDTH//2 - text.get_width()//2, HEIGHT//2))\n    pygame.display.update()",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "keeper_direction",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "keeper_direction = 1 \ndef show_game_over(winner):\n    screen.blit(background, (0,0))\n    text = font.render(f\"{winner} Wins! Press R to restart\", True , white)\n    screen.blit(text, (WIDTH//2 - text.get_width()//2, HEIGHT//2))\n    pygame.display.update()\n    waiting = True     \n    while waiting: \n        for event in pygame.event.get():\n            if event.type == QUIT:",
+        "detail": "v4",
+        "documentation": {}
+    },
+    {
+        "label": "run",
+        "kind": 5,
+        "importPath": "v4",
+        "description": "v4",
+        "peekOfCode": "run = True     \nwhile run: \n    for e in pygame.event.get():\n        if e.type == QUIT:\n            run = False \n    #Player controls \n    keys = pygame.key.get_pressed()\n    if keys[K_LEFT] and player_pos[0] > 0:\n        player_pos[0] -= paddle_speed \n    if keys[K_RIGHT] and player_pos[0] < WIDTH - player_width:",
+        "detail": "v4",
+        "documentation": {}
+    }
+]
