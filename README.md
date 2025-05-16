@@ -2,6 +2,6 @@
 
 This is a spin on pypong.
 
-<img src="schreenshot.PNG" alt="cpature from game" style="height: 100px; width:100px;">
+![capture from game](schreenshot.PNG)
 
 Simply run V4.py to begin
