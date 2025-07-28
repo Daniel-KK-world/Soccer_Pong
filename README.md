@@ -2,7 +2,8 @@
 
 > A fast-paced twist on classic Pong — now with a soccer vibe. Built using `pygame`, this project blends old-school mechanics with a football-inspired look and feel. Two players. One ball. Infinite bragging rights.
 
-![pyponggif](https://github.com/user-attachments/assets/d8dae79f-1796-4ea9-9522-1cc32b37ab6a)
+![VideoCompressor_20250728162103849](https://github.com/user-attachments/assets/4b9e15f7-47eb-411a-bfbb-10d70688a6b2)
+
 
 
 Built using pygame as a remix of a classic — part of my ongoing series on beginner-friendly game development. Follow along on YouTube for breakdowns and devlogs.
