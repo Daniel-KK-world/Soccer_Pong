@@ -1,5 +1,52 @@
-# Soccer Pong 
+# ⚽️ Soccer Pong – A Spin on PyPong
 
-## A spin on pypong of course 
-Make a soccer game using pygame. 
+> A fast-paced twist on classic Pong — now with a soccer vibe. Built using `pygame`, this project blends old-school mechanics with a football-inspired look and feel. Two players. One ball. Infinite bragging rights.
 
+Built using pygame as a remix of a classic — part of my ongoing series on beginner-friendly game development. Follow along on YouTube for breakdowns and devlogs.
+
+🎬 YouTube: https://youtu.be/hcYZjUPoFZQ?si=BvMv638S4XY03Acf
+
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)
+![pygame](https://img.shields.io/badge/pygame-2.0-green)
+
+---
+
+## 🚀 Features
+- Classic Pong mechanics with a soccer theme   
+- Score tracking & win condition  
+- Smooth ball physics & paddle control  
+- ⚽ Pitch style design
+- AI oponent
+
+---
+
+## 🎮 How to Play
+
+1. Clone this repo:
+   ```bash
+   git clone https://github.com/your-username/soccer-pong.git
+   cd soccer-pong
+2. Run the game:
+   ```bash
+   python soccer_pong.py
+3.Controls:
+
+AI keeper:  Automatic
+
+Player: Up Arrow (up), Down Arrow (down)
+4.First to 10 goals wins!
+
+###📦 Requirements
+Python 3.x
+
+pygame
+
+Install pygame:
+  pip install pygame
+
+
+🤝 Contributing
+Feel free to fork, improve, and PR! Suggestions and fixes are welcome.
+
+📄 License
+MIT — use freely, build cool stuff.
