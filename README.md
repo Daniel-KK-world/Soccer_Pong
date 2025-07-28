@@ -4,7 +4,9 @@
 > 
 <video width="600" controls>
   <source src="https://res.cloudinary.com/dz22pel2c/video/upload/v1753720524/VideoCompressor_20250728162651360_pnttwz.mp4" type="video/mp4">
+  Your browser does not support the video tag.
 </video>
+
 
 
 Built using pygame as a remix of a classic — part of my ongoing series on beginner-friendly game development. Follow along on YouTube for breakdowns and devlogs.
