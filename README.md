@@ -1,7 +1,5 @@
 # ⚽️ Soccer Pong – A Spin on PyPong
 
-> A fast-paced twist on classic Pong — now with a soccer vibe. Built using `pygame`, this project blends old-school mechanics with a football-inspired look and feel. Two players. One ball.
-> 
 <video width="600" controls>
   <source src="https://res.cloudinary.com/dz22pel2c/video/upload/v1753720524/VideoCompressor_20250728162651360_pnttwz.mp4" type="video/mp4">
   Your browser does not support the video tag.
